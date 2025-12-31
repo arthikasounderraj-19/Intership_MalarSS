@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flipkart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f1f3f6;
+        }
+        .navbar {
+            background-color: #e85636;
+        }
+        .navbar-brand {
+            font-weight: bold;
+            color: #fff;
+        }
+        .category img {
+            width: 64px;
+            height: 64px;
+        }
+        .nav-pills .nav-link {
+            color: #000;
+        }
+        .nav-pills .nav-link.active {
+            background-color: #2896f0;
+            color: #fff;
+        }
+        .card img {
+            height: 180px;
+            object-fit: contain;
+        }
+        footer {
+            background-color: #172337;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="c:\Users\arthi\OneDrive\Desktop\image\flipkart logo.png" alt="Avatar logo" style="width: 40px;" class="rounded-pill">
+        </a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <form class="d-flex mx-auto w-50">
+                <input class="form-control" type="search" placeholder="Search for products">
+                <button class="btn btn-warning ms-2">Search</button>
+            </form>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <button class="btn btn-light me-2" data-bs-toggle="modal" data-bs-target="#loginModal">
+                        Login
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">Cart</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container my-4 bg-white p-3 rounded">
+    <ul class="nav nav-pills justify-content-center category">
+        <li class="nav-item">
+            <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#mobiles">
+                <img src="https://cdn-icons-png.flaticon.com/512/1077/1077042.png"><br>
+                Mobiles
+            </button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#fashion">
+                <img src="https://cdn-icons-png.flaticon.com/512/3081/3081559.png"><br>
+                Fashion
+            </button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#electronics">
+                <img src="https://cdn-icons-png.flaticon.com/512/1046/1046857.png"><br>
+                Electronics
+            </button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#home">
+                <img src="https://cdn-icons-png.flaticon.com/512/2921/2921822.png"><br>
+                Home
+            </button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#beauty">
+                <img src="https://cdn-icons-png.flaticon.com/512/2972/2972185.png"><br>
+                Beauty
+            </button>
+        </li>
+    </ul>
+</div>
+<div class="container">
+    <h4 class="mb-3">Best Deals</h4>
+    <div class="tab-content">
+        <div class="tab-pane fade show active" id="mobiles">
+            <div class="row g-3">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="c:\Users\arthi\OneDrive\Desktop\image\iphone.webp" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h6>iPhone 14</h6>
+                            <p class="text-success">₹59,999</p>
+                            <button class="btn btn-primary btn-sm">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="c:\Users\arthi\OneDrive\Desktop\image\samsung.webp" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h6>Samsung Galaxy A36</h6>
+                            <p class="text-success">₹22,499</p>
+                            <button class="btn btn-primary btn-sm">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="fashion">
+            <div class="row g-3">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="c:\Users\arthi\OneDrive\Desktop\image\shoes.png" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h6>Running Shoes</h6>
+                            <p class="text-success">₹2,499</p>
+                            <button class="btn btn-primary btn-sm">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="c:\Users\arthi\OneDrive\Desktop\image\kurtis.jpg" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h6>Kurtis</h6>
+                            <p class="text-success">₹2,650</p>
+                            <button class="btn btn-primary btn-sm">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="electronics">
+            <div class="row g-3">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="c:\Users\arthi\OneDrive\Desktop\image\laptop.png" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h6>Laptop</h6>
+                            <p class="text-success">₹45,999</p>
+                            <button class="btn btn-primary btn-sm">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="c:\Users\arthi\OneDrive\Desktop\image\headphones.jpg" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h6>Headphones</h6>
+                            <p class="text-success">₹5,650</p>
+                            <button class="btn btn-primary btn-sm">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="home">
+            <div class="row g-3">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="c:\Users\arthi\OneDrive\Desktop\image\washing.png" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h6>Washing Machine</h6>
+                            <p class="text-success">₹18,999</p>
+                            <button class="btn btn-primary btn-sm">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="c:\Users\arthi\OneDrive\Desktop\image\fridge.avif" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h6>Refrigerator</h6>
+                            <p class="text-success">₹22,499</p>
+                            <button class="btn btn-primary btn-sm">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="beauty">
+            <div class="row g-3">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="c:\Users\arthi\OneDrive\Desktop\image\makeup.avif" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h6>Beauty Product</h6>
+                            <p class="text-success">₹1,999</p>
+                            <button class="btn btn-primary btn-sm">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="c:\Users\arthi\OneDrive\Desktop\image\lipstick.jpg" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h6>Lipstick</h6>
+                            <p class="text-success">₹631</p>
+                            <button class="btn btn-primary btn-sm">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="mt-5 p-4 text-center">
+    <p>© 2025 Flipkart Clone | Designed using Bootstrap 5</p>
+</footer>
+<div class="modal fade" id="loginModal">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title">Login</h5>
+                <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label>Email / Mobile</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label>Password</label>
+                    <input type="password" class="form-control">
+                </div>
+                <div class="d-grid">
+                    <button class="btn btn-primary">Login</button>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <small>New to Flipkart? <a href="#">Create an account</a></small>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
